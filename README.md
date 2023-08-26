@@ -1,4 +1,3 @@
-
 # E-hentai-Downloader1.4
 
 A robust Python script designed to backup your favorite galleries from E-Hentai. Crafted with care by kibasnowpaw.
@@ -11,6 +10,7 @@ A robust Python script designed to backup your favorite galleries from E-Hentai.
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [License](#license)
+- [Important Notes](#important-notes)
 
 ## Features
 
@@ -30,12 +30,12 @@ A robust Python script designed to backup your favorite galleries from E-Hentai.
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/kibasnowpaw/E-hentai-Downloader1.0.git
+   git clone https://github.com/kibasnowpaw/E-hentai-Downloader1.4.git
    ```
 
 2. Navigate to the project directory:
    ```bash
-   cd E-hentai-Downloader1.0
+   cd E-hentai-Downloader1.4
    ```
 
 3. Install the required libraries:
@@ -63,8 +63,9 @@ A robust Python script designed to backup your favorite galleries from E-Hentai.
 
 ## License
 
-This project is licensed under the MIT License. See the `LICENSE` file in the repository for details.
+This project is licensed under the GPL-3.0 License. See the `LICENSE` file in the repository for details.
 
----
+## Important Notes
 
-If there are any specific details or sections you'd like to be added or modified based on the repository's content, please let me know!
+- Using a VPN can make the connection unstable and may result in timeout errors.
+- Malwarebytes or similar security software may block some connections it deems unsafe, which can also lead to timeouts.
