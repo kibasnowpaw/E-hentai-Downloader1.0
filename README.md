@@ -1,9 +1,7 @@
-# e-hentai Gallery Downloader
 
-![Python version](https://img.shields.io/badge/python-3.6%2B-blue)
-![License](https://img.shields.io/badge/license-MIT-green)
+# E-hentai-Downloader1.4
 
-Automate the download of images from e-hentai galleries using Python. Fetch gallery metadata, download images, and create .nfo files with metadata.
+A robust Python script designed to backup your favorite galleries from E-Hentai. Crafted with care by kibasnowpaw.
 
 ## Table of Contents
 
@@ -16,33 +14,57 @@ Automate the download of images from e-hentai galleries using Python. Fetch gall
 
 ## Features
 
-- Fetches gallery metadata using e-hentai API.
-- Downloads images and saves them to local directories.
-- Creates .nfo files containing metadata for each downloaded image.
-- Respectful delay to avoid overloading the server.
-- Unicode support for metadata in .nfo files.
+- Fetches gallery metadata using the E-Hentai API.
+- Downloads images from each gallery.
+- Sanitizes gallery titles to ensure valid filenames.
+- Implements a retry mechanism with exponential backoff for reliable downloading.
+- Introduces random delays between requests to be server-friendly.
 
 ## Prerequisites
 
-- Python 3.6 or higher
-- Required Python libraries: `requests`, `BeautifulSoup`
+- Python 3.x
+- `requests` library
+- `BeautifulSoup4` library
 
 ## Installation
 
-1. Clone this repository or download the ZIP.
-2. Install required libraries: `pip install requests beautifulsoup4`
-3. Add your e-hentai gallery IDs and tokens to `gallery_ids.txt`.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/kibasnowpaw/E-hentai-Downloader1.0.git
+   ```
+
+2. Navigate to the project directory:
+   ```bash
+   cd E-hentai-Downloader1.0
+   ```
+
+3. Install the required libraries:
+   ```bash
+   pip install requests beautifulsoup4
+   ```
 
 ## Usage
 
-1. Run the script: `python script.py`
-2. The script will fetch metadata, download images, and create .nfo files.
-3. Images will be saved in the `downloads` directory.
+1. Prepare a file named `gallery_ids.txt` in the root directory. Each line should contain a gallery ID and token separated by a comma.
+
+2. Run the script:
+   ```bash
+   python ehentai_downloader.py
+   ```
+
+3. The script will create a `downloads` directory with subdirectories named after each gallery title. Images will be saved in their respective directories.
 
 ## Contributing
 
-Contributions are welcome! If you find a bug or want to improve the script, feel free to submit a pull request.
+1. Fork the repository.
+2. Create a new branch for your changes.
+3. Commit your changes with meaningful commit messages.
+4. Open a pull request describing the changes you've made.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License. See the `LICENSE` file in the repository for details.
+
+---
+
+If there are any specific details or sections you'd like to be added or modified based on the repository's content, please let me know!
